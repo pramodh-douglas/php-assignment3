@@ -1,0 +1,98 @@
+        <!-- Start the page 'header' -->
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title></title>
+                <meta charset="utf-8">
+                <meta name="author" content="Dan">
+                <title>Assignment 3 Danny</title>   
+                <link href="css/styles.css" rel="stylesheet">     
+            </head>
+            <body>
+                <header>
+                    <h1>Assignment 03: PDO CRUD with DAO -- Danny (1234567)</h1>
+                </header>
+                <article>
+            <!-- Start the page's show data form -->
+        <section class="main">
+        <h2>Current Data</h2>
+        <table id="list">
+            <thead>
+                <tr>
+                    <th>Purchase ID</th>
+                    <th>Amount</th>                                       
+                    <th>Customer Detail</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+            </thead>
+                <tr class="oddRow">
+                    <td>P043S</td>
+                    <td>7</td>
+                    <td>Student</td>
+                    <td>$623.70</td>
+                    <td><a href="?action=edit&id=P043S">Edit</a></td>
+                    <td><a href="?action=delete&id=P043S">Delete</td>
+                </tr>
+                <tr class="evenRow">
+                    <td>P187R</td>
+                    <td>6</td>
+                    <td>Senior</td>
+                    <td>$504.90</td>
+                    <td><a href="?action=edit&id=P187R">Edit</a></td>
+                    <td><a href="?action=delete&id=P187R">Delete</td>
+                </tr>
+                <tr class="oddRow">
+                    <td>P213R</td>
+                    <td>6</td>
+                    <td>Regular</td>
+                    <td>$594.00</td>
+                    <td><a href="?action=edit&id=P213R">Edit</a></td>
+                    <td><a href="?action=delete&id=P213R">Delete</td>
+                </tr>
+                <tr class="evenRow">
+                    <td>P352S</td>
+                    <td>5</td>
+                    <td>Student</td>
+                    <td>$445.50</td>
+                    <td><a href="?action=edit&id=P352S">Edit</a></td>
+                    <td><a href="?action=delete&id=P352S">Delete</td>
+                </tr>
+            </table>
+            </section>        
+        <!-- Start the page's add entry form -->
+        <section class="form1">
+                <h3>Add a New Purchase</h3>
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <td>Purchase ID</td>
+                            <td><input type="text" name="purchaseID" id="purchaseID" placeholder="PXXX{R|S}"></td>
+                        </tr>                        
+                        <tr>
+                            <td>Amount</td>
+                            <td><input type="text" name="amount" id="amount" placeholder="1 to 10"></td>
+                        </tr>                                                
+                        <tr>
+                            <td>Customer Detail</td>
+                            <td>
+                                <select name="customerCode">
+                                    <option value="RE">Regular</option>
+                                    <option value="SE">Senior</option>
+                                    <option value="ST">Student</option>                            
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="action" value="create">
+                    <input type="submit" value="Add Purchase Record">
+                </form>
+            </section>
+
+            <!-- Start the page's footer -->            
+                </article>
+            </body>
+
+        </html>
+
+    

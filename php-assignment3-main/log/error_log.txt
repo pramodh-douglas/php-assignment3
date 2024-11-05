@@ -1,0 +1,36 @@
+[31-Oct-2024 01:43:42 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Page::listPurchases(), 0 passed in C:\xampp\htdocs\starter code\Assignment3_PRa73208.php on line 13 and exactly 1 expected in C:\xampp\htdocs\starter code\inc\Entity\Page.class.php:49
+Stack trace:
+#0 C:\xampp\htdocs\starter code\Assignment3_PRa73208.php(13): Page::listPurchases()
+#1 {main}
+  thrown in C:\xampp\htdocs\starter code\inc\Entity\Page.class.php on line 49
+[31-Oct-2024 01:55:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PurchaseDAO::query() in C:\xampp\htdocs\starter code\inc\Utility\PurchaseDAO.class.php:41
+Stack trace:
+#0 C:\xampp\htdocs\starter code\Assignment3_PRa73208.php(16): PurchaseDAO::getPurchases()
+#1 {main}
+  thrown in C:\xampp\htdocs\starter code\inc\Utility\PurchaseDAO.class.php on line 41
+[31-Oct-2024 01:57:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PurchaseDAO::query() in C:\xampp\htdocs\starter code\inc\Utility\PurchaseDAO.class.php:41
+Stack trace:
+#0 C:\xampp\htdocs\starter code\Assignment3_PRa73208.php(16): PurchaseDAO::getPurchases()
+#1 {main}
+  thrown in C:\xampp\htdocs\starter code\inc\Utility\PurchaseDAO.class.php on line 41
+[31-Oct-2024 01:58:04 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'assignment3_pra73208.pruchase' doesn't exist in C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\starter code\inc\Utility\PurchaseDAO.class.php(42): PDOService->execute()
+#2 C:\xampp\htdocs\starter code\Assignment3_PRa73208.php(16): PurchaseDAO::getPurchases()
+#3 {main}
+  thrown in C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php on line 85
+[31-Oct-2024 02:06:55 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'assignment3_pra73208.pruchase' doesn't exist in C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\starter code\inc\Utility\PurchaseDAO.class.php(42): PDOService->execute()
+#2 C:\xampp\htdocs\starter code\Assignment3_PRa73208.php(16): PurchaseDAO::getPurchases()
+#3 {main}
+  thrown in C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php on line 85
+[31-Oct-2024 02:16:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'assignment3_pra73208.pruchase' doesn't exist in C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php:85
+Stack trace:
+#0 C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php(85): PDOStatement->execute()
+#1 C:\xampp\htdocs\starter code\inc\Utility\PurchaseDAO.class.php(42): PDOService->execute()
+#2 C:\xampp\htdocs\starter code\Assignment3_PRa73208.php(16): PurchaseDAO::getPurchases()
+#3 {main}
+  thrown in C:\xampp\htdocs\starter code\inc\Utility\PDOService.class.php on line 85
